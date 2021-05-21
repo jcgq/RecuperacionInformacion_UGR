@@ -1,0 +1,302 @@
+\documentclass[a4paper,11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,spanish]{babel}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+    captionpos=b, 
+    showspaces=false,
+    showstringspaces=false,
+    basicstyle=\footnotesize\ttfamily,
+    showtabs=false,
+    columns=flexible,
+    numbers=left,
+    frameround=tttt,
+    frame=single, 
+    numberstyle=\tiny,
+    language=java,  
+    keywordstyle=\bfseries\color{blue!40!black},
+    commentstyle=\itshape\color{green!60!black},
+    %identifierstyle=\color{blue},
+    stringstyle=\color{orange},
+    \commentstyle=\itshape\color{ocre} 
+}
+
+%\usepackage{courier}
+
+\lstset{literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\EUR}}1 {£}{{\pounds}}1
+}
+
+
+
+\usepackage[top=2.0cm, bottom=2.4cm, right=2.0cm, left=2.0cm]{geometry}
+\usepackage{url}
+
+\usepackage{fancyhdr}
+\lhead{RI. Práctica 0. Información}
+\chead{Curso 2020-2021}
+\rhead{Alonso Bueno, Bartolomé Zambrana}
+\cfoot{\thepage}
+
+%\usepackage{natbib}
+
+
+
+%portada especial con lineas 
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\title{ 
+\normalfont \normalsize 
+\textsc{\textbf{Recuperación de Información (2020-21)} \\ Grado en Ingeniería Informática \\ Universidad de Granada} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Práctica 0: Información sobre SEO, JSON/JAVA y Perfil laboral de SI   \\% The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{Alonso Bueno Herrero \\ Bartolomé Zambrana Pérez } % Nombre y apellidos
+\date{\today} % Incluye la fecha actual
+
+\usepackage{tcolorbox}
+
+
+\begin{document}
+\selectlanguage{spanish}
+\pagestyle{fancy}
+
+
+\begin{titlepage}
+
+\maketitle % Muestra el Título
+
+\vspace{1cm} 
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3 \textwidth]{ugr.jpg}
+\end{figure}
+
+\end{titlepage}
+
+
+\newpage
+\tableofcontents 
+
+
+\begin{thebibliography}{99}
+\bibitem{1}   \url{https://es.wikipedia.org/wiki/Posicionamiento_en_buscadores}
+\bibitem{2}    
+\url{https://www.webopedia.com/TERM/S/SEO.html}
+\bibitem{3}    
+\url{https://www.lyfemarketing.com/blog/what-is-seo-and-how-it-works/}
+\bibitem{4}     
+\url{https://es.ourcodeworld.com/articulos/leer/126/como-trabajar-con-json-facilmente-en-java}
+\bibitem{41} \url{https://www.cyberclick.es/que-es/seo}
+\bibitem{5}     
+\url{https://www.discoduroderoer.es/leer-y-escribir-json-en-java/}
+\bibitem{6}    
+\url{https://www.json.org/json-es.html}
+
+\bibitem{7}    
+\url{https://study.com/articles/Information_Systems_Engineer_Salary_Requirements_and_Career_Information.html}
+\bibitem{8}    
+\url{https://micarrerauniversitaria.com/c-ingenieria/ingenieria-de-sistemas-de-informacion/#Que_Ingenieria_en_sistemas_de_informacion}
+\bibitem{9}    
+\url{https://www.uca.edu.ni/index.php/15-pregrado/carreras/91-ingenieria-en-sistemas-de-informacion}
+\end{thebibliography}
+
+
+
+\newpage 
+
+
+
+
+\section{Información sobre SEO}
+
+SEO (\textit{Search Engine Optimization}) son las siglas en inglés de Optimización de Motores de Búsqueda, y se refiere a un conjunto de metodologías (estratégicas, técnicas y tácticas) orientadas a aumentar el tráfico en un sitio web mediante el \textbf{posicionamiento en los primeros resultados del motor de búsqueda}.
+
+El SEO también se dedica a hacer que el resultado de un motor de búsqueda sea relevante para la consulta de búsqueda del usuario para que más personas hagan clic en el resultado cuando se muestra en la búsqueda. En este proceso, los fragmentos de texto y metadatos se optimizan para garantizar que el fragmento de información dado sea atractivo en el contexto de la consulta de búsqueda para obtener un CTR (tasa de clics) alto de los resultados de búsqueda.
+
+El \textbf{posicionamiento natural} u \textbf{orgánico}  se basa en la indexación que realizan unas aplicaciones denominadas arañas web, las cuales son programas informáticos que inspeccionan las páginas del World Wide Web de forma metódica y automatizada. En esta indización, las arañas web recorren las páginas web y almacenan las palabras clave relevantes en base de datos.
+
+\subsection{Factores internos para un mejor posicionamiento}
+
+
+\begin{itemize}
+\item \textit{	Etiqueta de título}: la etiqueta de título en cada página les dice a los motores de búsqueda de qué trata. Debe tener 70 caracteres o menos, incluida la palabra clave en la que se centra el contenido y el nombre de la empresa.
+\item 	\textit{Metadescripción}: la metadescripción en un sitio web les dice a los motores de búsqueda un poco más sobre el tema de cada página. También es utilizado por los visitantes del sitio web para comprender mejor de qué trata y si es relevante.
+\item 	\textit{Subtítulos}: los subtítulos no solo facilitan la lectura del contenido para los usuarios, sino que también pueden ayudar a mejorar el SEO. Es decir, se pueden utilizar etiquetas H1, H2 y H3 para ayudar a los motores de búsqueda a comprender mejor de qué se trata el contenido, distinguiendo entre búsquedas de compras, conocimiento ...
+\item  \textit{Enlaces} \textit{internos}: la creación de enlaces internos o hipervínculos a otro contenido del propio sitio web puede ayudar a los motores de búsqueda a obtener más información. 
+\item  \textit{Nombre de la imagen y etiquetas ALT}:  establecer la palabra o frase clave de búsqueda utilizando la etiqueta ALT de una imagen ayuda a una mejor indexación de la misma, de modo que pueda aparecer cuando los usuarios realicen búsquedas de imágenes por palabra o frase clave.
+\item 	\textit{Utilización de mapas}: su uso puede ayudar a la capacidad de rastreo de un lugar, posibilitando su aparición en una búsqueda de localización o de ruta hacia un lugar.
+\item \textit{Mobile Friendly}: Algunos buscadores como es Google dan prioridad a páginas que se basan en las características de \textit{Web Responsive}, es decir aquellos que evitan que el usuario tenga que realizar zoom para leer el contenido, que no sea necesario desplazarse horizontalmente para ver correctamente todo el contenido, aquellos que evitan software no común en dispositivos móviles ...
+
+\end{itemize}
+
+También cabe destacar que la utilización excesiva de las palabras o frases claves en el contenido del sitio web puede ocasionar la penalización del mismo, como es realizado por motores de búsqueda como Google.
+
+Por tanto, hemos de asegurarnos de que el contenido sea específico y relevante, evitando utilizar demasiadas palabras clave a la vez, ya que puede afectar de modo negativo a la optimización del motor de búsqueda.
+
+En conclusión, el posicionamiento interno engloba todas aquellas prácticas en la faceta del diseño y desarrollo del propio sitio web que permite una mejor ubicación por parte del motor de búsqueda.
+
+\subsection{Factores externos para un mejor posicionamiento}
+
+Además de los elementos de SEO en la página sobre los que la empresa tiene control, también existen factores de SEO fuera de la página que pueden afectar a su clasificación. Aunque la empresa no tenga control directo sobre estos factores fuera de la página, hay formas en que puede mejorar sus posibilidades de que estos factores funcionen a su favor: 
+
+\begin{itemize}
+\item 	\textit{Confianza}: la confianza se está convirtiendo en un factor cada vez más importante en el ranking de Google de un determinado sitio web. Así es como Google determina si tiene un sitio legítimo en el que los visitantes pueden confiar. Una de las mejores formas de mejorar la confianza es creando vínculos de retroceso (enlaces que un sitio web obtiene de otro, \textit{\textbf{backlinks}}) de calidad desde sitios que tengan autoridad. 
+\item 	\textit{Enlaces}: una de las formas más populares de crear SEO fuera de la página es a través de backlinks, como acabamos de decir. Aquí es importante tener cuidado porque es posible enviar spam a los sitios con enlaces a la web referenciada, provocando que ésta sea “vetada” en los motores de búsqueda. Por ello, se recomienda dedicar tiempo a construir relaciones con órganos y personas “influyentes” que tengan un sitio con contenido de calidad. 
+\item 	\textit{Social}:  otro factor importante de SEO fuera de la página son las acciones típicas de redes sociales modernas, como el “me gusta”, “seguir”, etc. Cuando se trata de impulsar el SEO, se deben buscar acciones de calidad de personas influyentes. Cuanto más contenido de calidad publique, más probabilidades tendrá de lograr que las personas compartan su contenido con otros.
+\end{itemize}
+
+
+En resumen, el posicionamiento externo engloba a aquellas técnicas que se emplean para mejorar la notoriedad del sitio en la web. Por norma general, se busca conseguir menciones en la red, en forma de enlace, de la web a optimizar. 
+
+\subsection{¿Cómo son los algoritmos usados por los motores de búsqueda? }
+
+
+\begin{itemize}
+\item \textbf{\textit{Rasgos}} \textbf{\textit{públicos}}: Son aquellos declarados por los administradores o creadores de dicho algoritmo, por ejemplo, podemos saber que el algoritmo de Google tiene ciertos aspectos técnicos que penalizan ciertos accionares de los administradores web o redactores de contenido. 
+\item \textbf{\textit{Rasgos}} \textbf{\textit{privados}}: Son aquellos “no declarados” por los creadores o administradores de dicho contenido, esto es, para que una persona no pueda ver el algoritmo en su totalidad. 
+\item \textbf{\textit{Rasgos sospechados}}: Son aquellos que no se conocen de forma oficial, pero tras ciertas investigaciones o experiencias se “comprueba” que están presentes.\textbf{\textit{}}
+\end{itemize}
+
+
+\section{Información relacionada con los documentos JSON y cómo trabajarlos en JAVA.}
+
+\begin{tcolorbox}
+\textbf{JSON} (JavaScript Object Notation) es un formato de intercambio de datos ligero, que sigue la sintaxis basada en objeto de JavaScript, basado en texto e independiente del idioma fácilmente legible y escribible. Aunque es muy parecido a la sintaxis de objeto literal de JavaScript, puede ser utilizado independientemente de JavaScript (como veremos), y muchos entornos de programación poseen la capacidad de leer y generar ficheros JSON.
+\end{tcolorbox}
+
+Para establecer JSON en Java hay que hacer uso de bibliotecas auxiliares, ya que no se encuentra predefinido en el lenguaje, entre estas bibliotecas encontramos Google Gson, Org.JSON, entre muchas otras.
+
+Los documentos JSON constan de una serie de objetos pares [Nombre | Valor], y éstos pueden estar en cualquier orden, e incluso organizados en matrices o anidados. El primer campo sirve como clave del conjunto, de modo que ha de ser exclusivo. Mientras que el valor puede tratarse de cualquier dato JSON (desde un String a un tipo de dato Date).
+
+Anteriormente se ha citado que se pueden tener objetos anidados, es decir que los objetos se pueden anidar dentro de otros objeto, eso sí, cada objeto anidado ha de tener una vía de acceso exclusiva. 
+
+También cabe decir que los valores de una matriz pueden tener tipos de datos diferentes y se pueden anidar.
+
+Los JSON son útiles cuando se quiere transmitir datos a través de una red. Debe ser convertido a un objeto nativo de JavaScript cuando se requiera acceder a sus datos. Esto no es un problema, dado que JavaScript posee un objeto global JSON que tiene los métodos disponibles para convertir entre ellos.
+
+Los documentos JSON son ampliamente usados en acceso a bases de datos no relacionales, como MongoDB. 
+
+Como ya se ha comentado, la manipulación de documentos JSON se puede acceder desde diferentes lenguajes de programación. Desde java, las principales operaciones ejemplificadas se pueden consultar en: \url{https://www.discoduroderoer.es/leer-y-escribir-json-en-java/} o en \url{https://es.ourcodeworld.com/articulos/leer/126/como-trabajar-con-json-facilmente-en-java}.  
+
+En los siguientes ejemplos se muestran algunas tareas sencillas. En ellos se ha utilizado la biblioteca \textbf{GSON}, siendo similar en el caso de utilizar la biblioteca \texttt{org.json}. 
+
+\begin{itemize}
+\item Leer un fichero línea a línea con GSON:
+
+\begin{lstlisting}
+Gson gson = new Gson();
+String fichero = "";
+ 
+try (BufferedReader br = 
+    new BufferedReader(new FileReader("datos.json"))) 
+   {
+    String linea;
+    while ((linea = br.readLine()) != null) {
+        fichero += linea;
+    }
+ 
+} catch (FileNotFoundException ex) {
+    System.out.println(ex.getMessage());
+} catch (IOException ex) {
+    System.out.println(ex.getMessage());
+}
+\end{lstlisting}
+
+\item Crear una cadena en \texttt{JSONObject} utilizando \texttt{org.json}:
+
+\begin{lstlisting}
+import org.json.*;
+
+public class Sandbox {
+    
+    /**
+     * Interpretar/convertir un objeto JSON
+     * 
+     * @param args 
+     */
+    public static void main(String[] args) {
+        JSONObject myJson = new JSONObject("{ \"number_list\": [ 1.9, 2.9, 3.4, 
+        3.5 ], \"extra_data\": {}, \"name\": \"Carlos\", \"last_name\": \"Carlos\", 
+        \"bank_account_balance\": 20.2, \"age\": 21, \"is_developer\": true }");
+        
+        // Obtener llave especifica de un objeto JSON
+        System.out.print(myJson.get("name")); // Carlos
+        System.out.print(myJson.get("age")); // 21
+    }
+}
+\end{lstlisting}
+
+\end{itemize}
+
+\section{¿Cuáles son los posibles trabajos para un ISI (Ingeniero en Sistemas de Información)? ¿Qué se espera de él?}
+
+
+Un perfil aproximado de los Ingenieros en Sistemas de Información es el siguiente:
+
+              
+\begin{itemize}
+\item Oficial de información (CIO - Chief Information Offcer).
+\item               Oficial de tecnología (CTO - Chief Technology Offcer).
+\item               Director (a) del área de informática y de sistemas.
+\item               Gerente de empresas de servicios informáticos.
+\item               Analista de procesos de negocio, sistemas y aplicaciones.
+\item               Oficial de proyectos de desarrollo y adaptación de sistemas de información.
+\item               Administrador de sistemas y plataformas tecnológicas.
+\item               Consultor(a) en proyectos de TIC para la inclusión digital de diversos sectores del país y la región.
+\item               Investigador(a) e innovador(a) en el área de tecnología.
+\end{itemize}
+
+A continuación, se muestra una gráfica (ver figura \ref{comp}) comparativa de salarios medios de los Ingenieros en Sistemas de Información frente a otras ingenierías similares: 
+
+% gráfica
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4 \textwidth]{graf.png}
+    \caption{Comparativa de salarios.}
+    \label{comp}
+\end{figure}
+
+La ingeniería de sistemas de información incorpora conocimientos en matemáticas, negocios e informática. Los ingenieros de sistemas de información diseñan, desarrollan, prueban y mantienen sistemas orientados al trabajo con los datos. 
+
+Los sistemas de información pueden presentarse en muchas formas, incluidos los sistemas de información geográfica o las redes de comunicación, entre otros. Los profesionales abarcan ampliamente los sectores público y privado, incluyendo agencias estatales de defensa, industrias médicas o corporaciones financieras.
+Las principales habilidades personales que deben de caracterizar a estos profesionales: comunicación, resolución de problemas y organización del trabajo. 
+Por tanto, podemos decir que algunas de las salidas profesionales entre muchas otras son las siguientes:
+
+
+\begin{itemize}
+\item Diseño, construcción y manteniendo de sistemas de información.
+\item Empresas del campo de las TIC.
+\item Empresas de servicios informáticos (desarrollo de aplicaciones y productos informáticos).
+\item Gerente de Bases de Datos.
+\item Programador de sistemas.
+\item Programador de aplicaciones Web.
+\item Administrador de procesos de selección e implantación de recursos informáticos.
+\end{itemize}
+
+
+
+
+\end{document}
